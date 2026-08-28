@@ -160,12 +160,12 @@ document.querySelector('.formulario').addEventListener('submit', function(event)
     textoMensagem += `*Telefone:* ${telValor}\n`;
     textoMensagem += `*E-mail:* ${emailValor}\n`;
     textoMensagem += `*Cidade:* ${cidadeValor}\n`;
-    textoMensagem += `*Em que podemos ajudar?:* \n ${msgValor}`;
+    textoMensagem += `*Em que podemos ajudar?:* \n${msgValor}`;
 
     // Codifica o texto para o formato de URL
     const textoCodificado = encodeURIComponent(textoMensagem);
 
     // Cria o link final e redireciona
-    const urlWhatsapp = `https://api.whatsapp.com/send?phone=5541995501711&text=${textoCodificado}`;
+    const urlWhatsapp = `https://api.whatsapp.com/send?phone=5592991894020&text=${textoCodificado}`;
     window.open(urlWhatsapp, '_blank');
 });
