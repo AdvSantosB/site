@@ -141,3 +141,31 @@ function mascara(t, mask) {
 document.querySelector(".bi-x-square").onclick = function () {
     document.querySelector(".devdesign").style.display = "none";
 }
+
+//FORMULARIO ENVIO POR WHATSAPP
+document.querySelector('.formulario').addEventListener('submit', function(event) {
+    // Impede o envio padrão do formulário
+    event.preventDefault();
+
+    // Captura apenas as respostas digitadas pelo usuário
+    const nomeValor = document.getElementById('name').value;
+    const telValor = document.getElementById('telefone').value;
+    const emailValor = document.getElementById('email').value;
+    const cidadeValor = document.getElementById('cidade').value;
+    const msgValor = document.getElementById('message').value;
+
+    // Monta o texto formatado escrevendo as perguntas e respostas manualmente
+    let textoMensagem = `*Contato via Site Agenda*\n\n`;
+    textoMensagem += `*Nome e sobrenome:* ${nomeValor}\n`;
+    textoMensagem += `*Telefone:* ${telValor}\n`;
+    textoMensagem += `*E-mail:* ${emailValor}\n`;
+    textoMensagem += `*Cidade:* ${cidadeValor}\n`;
+    textoMensagem += `*Em que podemos ajudar?:* \n ${msgValor}`;
+
+    // Codifica o texto para o formato de URL
+    const textoCodificado = encodeURIComponent(textoMensagem);
+
+    // Cria o link final e redireciona
+    const urlWhatsapp = `https://api.whatsapp.com/send?phone=5541995501711&text=${textoCodificado}`;
+    window.open(urlWhatsapp, '_blank');
+});
