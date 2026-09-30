@@ -357,7 +357,7 @@ figure {
 .img-banner {
     animation: bouncing 10s ease-in-out infinite alternate;
 
-    @keyframes bouncing { 
+    @keyframes bouncing {
         0% {
             transition: transform 3s, filter 1.5s ease-in-out;
             transform-origin: center center;
@@ -415,7 +415,7 @@ figure {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    
+
     h4 {
         margin-left: 12px;
     }
@@ -625,6 +625,14 @@ figure {
         float: left;
         margin-right: 10px;
     }
+}
+
+.rodape-cartao {
+    width: 270px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
