@@ -22,14 +22,14 @@ html {
   --areanav: var(--secundaria);
   --rodape: var(--primaria);
   --rodape2: var(--secundaria);
-  --menu: #ffffff;
+  --menu: #fff;
   --menu-hover: var(--complementar);
   --menu-ativo: var(--complementar);
   --titulos: var(--secundaria);
   --texto: #222;
   --texto-fescuro: #111111;
-  --link: #000000;
-  --link-hover: #000000;
+  --link: $preto;
+  --link-hover: $preto;
   --fundo: #f5f5f5;
   --whatsapp: #25d366;
 }
@@ -42,7 +42,6 @@ body {
   color: var(--texto);
   background-color: var(--fundo);
 }
-
 @media (max-width: 767.98px) {
   body {
     font-size: 1.125rem;
@@ -53,7 +52,6 @@ p a {
   color: var(--link);
   text-decoration: none;
 }
-
 p a:hover {
   text-decoration: underline;
   color: var(--link-hover) !important;
@@ -66,7 +64,6 @@ p a:hover {
   padding-right: 30px;
   border-radius: 100px;
 }
-
 .btn:hover, .btn:active {
   color: #ffffff;
   border-color: var(--secundaria);
@@ -90,24 +87,20 @@ h1 {
   text-transform: uppercase;
   color: var(--complementar);
 }
-
 h1 strong {
   text-transform: none;
   color: #ffffff;
 }
-
 @media (min-width: 992px) and (max-width: 1199.98px) {
   h1 {
     font-size: 3.125rem;
   }
 }
-
 @media (min-width: 1400px) {
   h1 {
     font-size: 4.6875rem;
   }
 }
-
 @media (max-width: 991.98px) {
   h1 {
     font-size: 2.625rem;
@@ -121,14 +114,12 @@ h2 {
   letter-spacing: 10px;
   color: var(--titulos);
 }
-
 @media (max-width: 991.98px) {
   h2 {
     font-size: 2.5rem;
     letter-spacing: initial;
   }
 }
-
 @media (min-width: 992px) {
   h2 + h3 {
     width: 90%;
@@ -140,7 +131,6 @@ h3 {
   font-size: 2.5rem;
   text-align: center;
 }
-
 @media (max-width: 767.98px) {
   h3 {
     font-size: 1.5rem;
@@ -187,7 +177,7 @@ h5 {
     border-bottom-right-radius: 5px;
     background-color: #eeeeee;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
-    transition: .32s;
+    transition: 0.32s;
   }
   .cartao-logo .logo {
     width: 100%;
@@ -196,10 +186,9 @@ h5 {
   }
   .cartao-logo.remove-logocartao {
     top: -135px;
-    transition: .32s;
+    transition: 0.32s;
   }
 }
-
 @media (max-width: 991.98px) {
   .cartao-logo {
     display: none;
@@ -208,19 +197,17 @@ h5 {
 
 .logo-navegacao {
   width: 140px;
-  transition: .32s;
+  transition: 0.32s;
 }
-
 @media (min-width: 992px) {
   .logo-navegacao {
     visibility: hidden;
   }
 }
-
 @media (min-width: 992px) {
   .logo-navegacao.aparece-logonav {
     visibility: visible;
-    transition: .32s;
+    transition: 0.32s;
   }
 }
 
@@ -229,7 +216,6 @@ nav {
   border-bottom: 1px solid #ffffff;
   background-color: var(--areanav);
 }
-
 @media (max-width: 767.98px) {
   nav {
     transition: 1s;
@@ -239,7 +225,7 @@ nav {
 @media (max-width: 767.98px) {
   .menu-updown {
     top: -90px;
-    transition: .5s;
+    transition: 0.5s;
   }
 }
 
@@ -251,7 +237,6 @@ nav {
     top: -100px;
   }
 }
-
 .nav-link {
   font-size: 1.125rem;
 }
@@ -259,39 +244,34 @@ nav {
 .navbar-nav .nav-link {
   color: var(--menu);
 }
-
 @media (min-width: 992px) {
   .navbar-nav .nav-link::after {
     content: "";
     display: block;
     width: 0%;
     height: 2px;
-    transition: .5s;
+    transition: 0.5s;
     background-color: var(--complementar);
   }
 }
-
 @media (min-width: 768px) {
   .navbar-nav .nav-link {
     margin-left: 20px;
   }
 }
-
 .navbar-nav .nav-link:hover {
   color: var(--menu-hover);
 }
-
 @media (min-width: 992px) {
   .navbar-nav .nav-link:hover::after {
     content: "";
     display: block;
     width: 100%;
     height: 2px;
-    transition: .5s;
+    transition: 0.5s;
     background-color: var(--complementar);
   }
 }
-
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: var(--menu-ativo);
 }
@@ -302,13 +282,11 @@ nav {
   padding-right: 0px;
   scroll-margin-top: 78px;
 }
-
 @media (max-width: 767.98px) {
   .secao {
     scroll-margin-top: 10px;
   }
 }
-
 .secao .container-xxl {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -327,7 +305,7 @@ nav {
   bottom: 30px;
   right: 15px;
   cursor: pointer;
-  transition: .32s;
+  transition: 0.32s;
   opacity: 0;
   text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
 }
@@ -345,7 +323,6 @@ figure {
   transition: 1s;
   overflow: hidden;
 }
-
 figure.empresa {
   width: 100%;
   max-width: 620px;
@@ -353,14 +330,12 @@ figure.empresa {
   border-top-right-radius: 100px;
   box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.3);
 }
-
 @media (max-width: 767.98px) {
   figure.empresa {
     max-width: 360px;
     margin: 30px auto 0 auto;
   }
 }
-
 figure:hover {
   border-color: var(--link-hover);
   transition: 1s;
@@ -370,7 +345,6 @@ figure:hover {
   transition: transform 3s, filter 1.5s ease-in-out;
   transform-origin: center center;
 }
-
 .img-zoom:hover {
   transform: scale(1.3);
   transform-origin: center center;
@@ -379,7 +353,6 @@ figure:hover {
 .img-banner {
   animation: bouncing 10s ease-in-out infinite alternate;
 }
-
 @keyframes bouncing {
   0% {
     transition: transform 3s, filter 1.5s ease-in-out;
@@ -390,7 +363,6 @@ figure:hover {
     transform-origin: center center;
   }
 }
-
 @media (max-width: 767.98px) {
   .img-banner {
     max-width: 270%;
@@ -412,31 +384,26 @@ figure:hover {
   color: #ffffff;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
 }
-
 @media (max-width: 767.98px) {
   .banner-titulos {
     top: 130px;
   }
 }
-
 @media (min-width: 768px) and (max-width: 991.98px) {
   .banner-titulos {
     top: 110px;
   }
 }
-
 @media (min-width: 992px) {
   .banner-titulos {
     top: 160px;
   }
 }
-
 @media (min-width: 1400px) {
   .banner-titulos {
     top: 290px;
   }
 }
-
 .banner-titulos a {
   text-shadow: none;
   background-color: var(--complementar);
@@ -447,7 +414,6 @@ figure:hover {
   align-items: center;
   margin-bottom: 15px;
 }
-
 .himg h4 {
   margin-left: 12px;
 }
@@ -459,29 +425,24 @@ figure:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 #areaatuação .pelicula {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
-
 #areaatuação h2,
 #areaatuação h3 {
   color: #ffffff;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.9);
 }
-
 #areaatuação h3,
 #areaatuação p {
   font-weight: 300;
 }
-
 #areaatuação .btn {
   color: #ffffff;
   background-color: var(--whatsapp);
 }
-
 #areaatuação .btn:hover {
   color: #000000;
   background-color: #ffffff;
@@ -492,7 +453,6 @@ figure:hover {
   background-color: var(--primaria);
   overflow: hidden;
 }
-
 #tags .astags {
   display: flex;
   flex-wrap: nowrap;
@@ -501,20 +461,17 @@ figure:hover {
   transform: translateX(0%);
   animation: bouncing-aparecer 10s linear 1;
 }
-
 @media (max-width: 1199.98px) {
   #tags .astags {
     justify-content: left;
   }
 }
-
 @media (max-width: 767.98px) {
   #tags .astags {
     transform: translateX(50%);
     animation: bouncing-text 10s ease-in-out infinite alternate;
   }
 }
-
 @keyframes bouncing-aparecer {
   0% {
     transform: translateX(90%);
@@ -523,7 +480,6 @@ figure:hover {
     transform: translateX(0%);
   }
 }
-
 @keyframes bouncing-text {
   0% {
     transform: translateX(0%);
@@ -532,7 +488,6 @@ figure:hover {
     transform: translateX(-210%);
   }
 }
-
 #tags .tag {
   display: flex;
   flex-direction: column;
@@ -540,12 +495,10 @@ figure:hover {
   color: #ffffff;
   margin: 0 30px;
 }
-
 #tags .tag img {
   max-width: 40px;
   max-height: 32px;
 }
-
 #tags .tag p {
   font-size: 0.8125rem;
   font-weight: 300;
@@ -560,13 +513,11 @@ figure:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 #agenda .pelicula {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
-
 #agenda h2,
 #agenda h3,
 #agenda h4,
@@ -575,7 +526,6 @@ figure:hover {
   color: #ffffff;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.9);
 }
-
 #agenda h3,
 #agenda p,
 #agenda label {
@@ -587,7 +537,6 @@ figure:hover {
   max-width: 1000px;
   margin: 0 auto;
 }
-
 @media (min-width: 992px) {
   .formulario div {
     width: 100%;
@@ -602,16 +551,13 @@ figure:hover {
     margin-right: 2%;
   }
 }
-
 .formulario div input {
   min-height: 50px;
 }
-
 .formulario div textarea {
   min-height: 120px;
   margin-bottom: 10px;
 }
-
 .formulario button {
   text-transform: uppercase;
   color: var(--secundaria);
@@ -622,14 +568,12 @@ figure:hover {
   border-radius: 100px;
   background-color: #ffffff;
 }
-
 @media (max-width: 767.98px) {
   .formulario button {
     width: 90%;
     height: 44px;
   }
 }
-
 .formulario button:hover {
   color: #000000;
   background-color: var(--complementar);
@@ -653,7 +597,6 @@ figure:hover {
   margin: 15px 0px;
   background-color: rgba(255, 255, 255, 0.7);
 }
-
 .box img {
   float: left;
   margin-right: 10px;
@@ -662,11 +605,9 @@ figure:hover {
 footer {
   background-color: var(--rodape);
 }
-
 footer .emailcopiar {
   cursor: pointer;
 }
-
 footer .emailcopiar:hover {
   color: #000000;
 }
@@ -677,7 +618,6 @@ footer .emailcopiar:hover {
   flex-direction: column;
   justify-content: center;
 }
-
 @media (max-width: 767.98px) {
   .footer-texto {
     align-items: center;
@@ -687,17 +627,14 @@ footer .emailcopiar:hover {
 .footer {
   padding: 30px 20px;
 }
-
 @media (max-width: 767.98px) {
   .footer {
     text-align: center;
   }
 }
-
 .footer img {
   width: 270px;
 }
-
 .footer h3,
 .footer h4 {
   font-size: 1.5rem;
@@ -705,7 +642,6 @@ footer .emailcopiar:hover {
   margin-top: 40px;
   margin-bottom: 20px;
 }
-
 .footer p {
   font-size: 1rem;
   font-weight: 300;
@@ -713,7 +649,6 @@ footer .emailcopiar:hover {
   color: #ffffff;
   margin-bottom: 8px;
 }
-
 .footer p::after {
   content: "";
   display: block;
@@ -721,19 +656,15 @@ footer .emailcopiar:hover {
   border-color: #ffffff;
   margin-top: 8px;
 }
-
 .footer p:last-child {
   border: 0px;
 }
-
 .footer p a {
   color: #ffffff;
 }
-
 .footer p a:hover {
   color: #000000 !important;
 }
-
 .footer p a.whatsapp-footer {
   color: var(--primaria);
   padding: 4px 8px;
@@ -741,11 +672,9 @@ footer .emailcopiar:hover {
   margin-left: 10px;
   background-color: #ffffff;
 }
-
 .footer p a.whatsapp-footer:hover {
   background-color: var(--whatsapp);
 }
-
 .footer p a.whatsapp-footer:hover i {
   color: #ffffff;
 }
@@ -757,16 +686,13 @@ footer .emailcopiar:hover {
   padding: 15px 0px;
   background-color: var(--rodape2);
 }
-
 .rodape p {
   color: #ffffff;
   margin: 0;
 }
-
 .rodape p a {
   color: #ffffff;
 }
-
 .rodape p a:hover {
   color: var(--complementar) !important;
 }
@@ -785,43 +711,35 @@ footer .emailcopiar:hover {
   background-color: rgba(255, 255, 255, 0.9);
   opacity: 0;
 }
-
 .devdesign.aparecer {
   opacity: 1;
 }
-
 .devdesign .marca {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .devdesign .icones {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 .devdesign .bi-x-square {
   cursor: pointer;
 }
-
 .devdesign .bi-x-square:hover {
   display: flex;
   color: #fff !important;
   background-color: #f00;
 }
-
 .devdesign a {
   text-decoration: none;
 }
-
 .devdesign a:hover {
   text-decoration: underline;
 }
-
 .devdesign p {
   margin: 0px;
 }
 
-/*PROPAGANDA NO SITE FIM*/
+/*PROPAGANDA NO SITE FIM*//*# sourceMappingURL=style.css.map */
