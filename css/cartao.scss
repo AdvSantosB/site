@@ -34,7 +34,7 @@ p {
 }
 
 .modal-img img {
-  max-width: 80%;
+  max-width: 300px;
   height: auto;
   animation: .6s ease 0s 1 zoom-img;
 }
@@ -137,6 +137,7 @@ img[alt="botao"] {
     padding: 6px;
     border-radius: 8px;
     border: 2px solid rgba(255, 255, 255, .4);
+    cursor: pointer;
 } 
 
 .enderecos {
